@@ -11,7 +11,10 @@
 </head>
 
 <body>
+
   <div class="result" id="messages"></div>
+  <div class="section1">
+    <button class="hidebutton">hide</button>
   <h1>Zadania rekrutacyjne JavaScript</h1>
 
   <h2>1. zadanie pierwsze, odwróć stringa - done , SPLIT() REVERSE() JOIN()</h2>
@@ -52,14 +55,262 @@
   <h2>projekt 22 - szyfr cezara  letter dodany o 13 indexów, </h2>
   <h2>projekt 23 - weryfikacjakarty funckje sprawdzające, obiekt z danymi kart</h2>
   <h2>projekt 24 - abstract synax tree - obiekt z werytikacją na element i/lub text i do kodu HTML</h2>
+  </div>
+
 
   <h2>1. lustro </h2>
   <div class="app">
     <input type="text" class="text-input" value="brawo!">
     <span class="mirror">!owarb</span>
   </div>
+  <h2>2. zarówka, wazne w css toggle .bulb--on na .bulb__top , oraz query selector '#light-toggle' - # znaczy zaznacz tylko selektor ID z #</h2>
+  <div class="bulb">
+    <div class="bulb__top"></div>
+    <img class="bulb__wire" src="https://i.imgur.com/YHZCVPl.png" alt="Wire">
+    <div class="bulb__bottom"></div>
+  </div>
+
+  <label for="light-toggle">
+    <input name="light-toggle" id="light-toggle" type="checkbox">
+    Światło włączone
+  </label>
+
+  <h2>Płótno: foreach kazdy pixel
+    originalCanvas.forEach((element, index) = {
+      if(element.classList.contains('pixel-dot')) {
+        fakeCanvas[index].classList.add('pixel-dot');
+  </h2>
+<div class="flex-column fake-canvas">
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+</div>
+<h2>Oryginał:</h2>
+<div class="flex-column original-canvas">
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+    <div class="pixel pixel-dot"></div>
+    <div class="pixel"></div>
+  </div>
+  <div class="flex-row">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+</div>
+
+<h2>p4. winda - scrolltop na mouseover i wheel add event listener. Do tego wheeldelta gdzie idzie scroll </h2>
+<div class="direction">
+  Kierunek: 🔽
+</div>
+
+<div class="elevator">
+  <div class="floor">
+    Piętro 10
+  </div>
+  <div class="floor">
+    Piętro 9
+  </div>
+  <div class="floor">
+    Piętro 8
+  </div>
+  <div class="floor">
+    Piętro 7
+  </div>
+  <div class="floor">
+    Piętro 6
+  </div>
+  <div class="floor">
+    Piętro 5
+  </div>
+  <div class="floor">
+    Piętro 4
+  </div>
+  <div class="floor">
+    Piętro 3
+  </div>
+  <div class="floor">
+    Piętro 2
+  </div>
+  <div class="floor">
+    Piętro 1
+  </div>
+  <div class="floor">
+    Piętro 0
+  </div>
+</div>
 
 
+  <script src="js/app.js"></script>
   <script src="js/printmessage.js"></script>
   <script src="js/reverseString.js"></script>
   <script src="js/validatePassword.js"></script>
@@ -87,6 +338,9 @@
   <script src="js/szyfrcezara.js"></script>
   <script src="js/weryfikacjakarty.js"></script>
   <script src="js/lustro.js"></script>
+  <script src="js/zarowka.js"></script>
+  <script src="js/reprodukcja.js"></script>
+  <script src="js/winda.js"></script>
 
 </body>
 </html>
