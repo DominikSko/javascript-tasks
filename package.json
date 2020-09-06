@@ -24,7 +24,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "editorconfig": "^0.15.3"
+    "@types/howler": "^2.2.1",
+    "editorconfig": "^0.15.3",
+    "howler": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
