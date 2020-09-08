@@ -279,4 +279,18 @@ li {
 .space {
   margin: 500px;
 }
+
+.potwor {
+  background: #1b507a;
+  background: radial-gradient(circle, #1b507a 0%, #0c2132 100%);
+}
+
+.eye-left {
+  left: 10px;
+}
+
+.eye-left .dot {
+  top: 30px;
+  left: 25px;
+}
 /*# sourceMappingURL=style.css.map */

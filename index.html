@@ -3,10 +3,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Zadania rekrutacyjne JavaScript</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -502,7 +507,7 @@
 <div class="app">
 	<form class="form">
 		<input class="form__input" type="text" id="book-name" name="book-name" placeholder="Nazwa książki"/>
-		<button id="form__button">Wyszukaj</button>
+    <button type="button" id="form__button">Wyszukaj</button>
 	</form>
 
 	<ul class="results">
@@ -512,8 +517,103 @@
 
 <h4>Przygotowano na podstawie <a href="https://www.goodreads.com/api">Goodreads API</a></h4>
 
-<h2>7. sortowanie danych</h2>
+<h2>7. sortowanie danych   - do powtórki </h2>
+<div class="bg-gray-900 p-12 flex justify-center items-center h-screen">
+	<table class="table-auto bg-white rounded-md overflow-hidden shadow-xl">
+    <thead>
+      <tr>
+        <th class="px-4 py-2">Moduł</th>
+        <th class="px-4 py-2">Autor</th>
+        <th class="px-4 py-2"><a class="hover:text-orange-600" href="#"><i class="fas fa-caret-down"></i> Czas trwania</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border px-4 py-2">Fundamenty języka JavaScript</td>
+        <td class="border px-4 py-2">Adam</td>
+        <td class="border px-4 py-2">10129</td>
+      </tr>
+      <tr class="bg-gray-100">
+        <td class="border px-4 py-2">Przeglądarka bez tajemnic</td>
+        <td class="border px-4 py-2">Przemek</td>
+        <td class="border px-4 py-2">19393</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">W świecie frameworków</td>
+        <td class="border px-4 py-2">Marcin</td>
+        <td class="border px-4 py-2">14002</td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+</div>
 
+<h2>8. ciasteczkowypotwor  storage !?  storage.setItem("shure",  , getitem,  monster.style.xxxxcss styl monster.style.display = 'none'; </h2>
+<div class="potwor p-12 flex justify-center items-center h-screen">
+  <div class="cookie flex flex-col z-10 relative bg-gray-900 max-w-xs text-center text-white p-3 rounded-md mt-40">Hey! Remember that cookies are great for everyone! Do you agree? 🤔
+    <button class="shurebutton mt-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">🍪 Shure!</button>
+  </div>
+
+  <div class="monster flex justify-content items-center absolute">
+      <div class="eye-left bg-white rounded-full p-12 relative">
+        <div class="dot bg-black rounded-full p-2 absolute top-5"></div>
+      </div>
+      <div class="eye-right bg-white rounded-full p-12 relative">
+        <div class="bg-black rounded-full p-2 absolute top-5"></div>
+      </div>
+  </div>
+</div>
+
+<h2>drag n drop</h2>
+<div class="bg-gray-900 p-12 flex justify-center items-top">
+
+  <div class=" bg-white overflow-hidden rounded-md p-30 mx-5 max-w-xs flex-1 flex flex-col">
+    <h2 class="text-4xl p-5 text-center">Drafts</h2>
+    <main class="area p-10 bg-gray-300 flex-1">
+      <article draggable="true" id="item1" class="item bg-white rounded-md overflow-hidden my-10">
+        <a href="#">
+            <img draggable="false" alt="Placeholder" class="block h-auto w-full" src="https://img.youtube.com/vi/_H1MYbmyupw/maxresdefault.jpg">
+        </a>
+        <header draggable="false" class="pt-5 px-5 flex justify-between">
+          <h1 class="text-lg text-center"><a draggable="false" href="#">Q&A</a></h1>
+          <div>14/2/20</div>
+        </header>
+        <footer class="px-5 py-3 flex items-center text-sm">
+          <img alt="Placeholder" class="w-6 block rounded-full" src="https://www.datocms-assets.com/12596/1561887961-1560597249-przeprogramowanilogo.png?auto=format&fm=jpg">
+          <p class="ml-2 text-sm">
+              Przeprogramowani
+          </p>
+        </footer>
+      </article>
+
+      <article draggable="true" id="item2" class="item bg-white rounded-md overflow-hidden my-10">
+        <a href="#">
+            <img draggable="false" alt="Placeholder" class="block h-auto w-full" src="https://img.youtube.com/vi/svgI-V_BBOs/maxresdefault.jpg">
+        </a>
+        <header draggable="false" class="pt-5 px-5 flex justify-between">
+          <h1 class="text-lg"><a draggable="false" href="#">Article</a></h1>
+          <div>14/2/20</div>
+        </header>
+        <footer class="px-5 py-3 flex items-center text-sm">
+          <img draggable="false" alt="Placeholder" class="w-6 block rounded-full" src="https://www.datocms-assets.com/12596/1561887961-1560597249-przeprogramowanilogo.png?auto=format&fm=jpg">
+          <p class="ml-2 text-sm">
+              Przeprogramowani
+          </p>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <div class=" bg-white overflow-hidden rounded-md p-30 max-w-xs flex-1 flex flex-col">
+    <h2 class="text-4xl p-5 text-center">Published</h2>
+    <main class="area p-10 bg-gray-300 flex-1">
+
+    </main>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+</div>
 
 
 
@@ -553,6 +653,15 @@
   <script src="js/tajnykod.js"></script>
   <script src="js/ksiegarnia.js"></script>
   <script src="js/sortowaniedanych.js"></script>
+  <script src="js/ciasteczkowypotwor.js"></script>
+  <script src="js/dragndrop.js"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
 </html>
