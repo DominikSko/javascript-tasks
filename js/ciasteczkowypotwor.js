@@ -18,4 +18,4 @@ button3.addEventListener('click', () => {
   hideMonster();
 });
 
-hideMonster();
+// hideMonster();
