@@ -293,4 +293,42 @@ li {
   top: 30px;
   left: 25px;
 }
+
+.app-alert {
+  cursor: help;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+
+.app-button {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  transition: .2s;
+}
+
+.app-button:active {
+  transform: translate(3px, 3px);
+}
+
+.app-button span:first-child {
+  background-color: #1A202C;
+}
+
+.app-button span:nth-child(2) {
+  color: #1A202C;
+}
+
+.addAlertAnimation {
+  transform: scale(1);
+}
+
+.removeAlertAnimation {
+  transform: scale(0.2);
+}
+
+.counter {
+  color: white;
+  font-size: 28px;
+}
 /*# sourceMappingURL=style.css.map */
