@@ -308,3 +308,95 @@ li {
   color: white;
   font-size: 28px;
 }
+
+li.active{
+  background-color: rgb(165, 165, 165);
+}
+
+.disabled {
+  pointer-events: none;
+  color: gb(165, 165, 165);
+  border-color: rgb(165, 165, 165);
+  opacity: 0.6;
+}
+
+.invisible {
+  display: none;
+}
+
+.menu-btn.disabled{
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.progress-bubble{
+  transition:1s;
+}
+
+.progress-bar{
+  width:0%;
+}
+
+.progress-bar.colored-bar{
+  animation: progressBar 0.4s ease-in-out;
+}
+
+@keyframes progressBar {
+  0% {
+    opacity:0.1;
+    width: 0;
+  }
+  100% {
+    width: 100%;
+     opacity:1;
+  }
+}
+
+
+.progress-bar.uncolored-bar{
+  animation: regressBar 0.4s ease-in-out ;
+}
+
+@keyframes regressBar {
+  0% {
+    opacity:0.1;
+    width: 100%;
+
+  }
+  100% {
+    width: 0;
+    opacity:1;
+  }
+}
+
+.fileInfo{
+  margin-top:20px;
+}
+
+.fileInfo li{
+  list-style: none;
+  padding: 7px 0;
+}
+
+.fileInfo  span{
+  color:blue;
+}
+
+.reset{
+  margin-top:10px;
+  transition:0.3s;
+}
+
+.reset:hover{
+  background-color:brown;
+}
+
+.reset.hidden{
+  display:none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
