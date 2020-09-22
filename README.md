@@ -9,5 +9,10 @@ i html validate:
  "html-validate": "^2.8.0",
 
 
-ze skryptów
+ze skryptów usunięte
+
+"test": "npm-run-all test:*",
 "test:html": "html-validate *.html",
+"test:scss": "stylelint sass/",
+"test": "npm-run-all test:*",
+    "build": "npm-run-all build:* test",

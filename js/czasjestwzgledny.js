@@ -2,8 +2,8 @@ const counter = document.querySelector('.counter');
 const decrement = document.querySelector('button[data-action="decrement"]');
 const increment = document.querySelector('button[data-action="increment"]');
 const multiplier = document.querySelector('.multiplier');
-const startBtn = document.querySelector('.start-btn');
-const stopBtn = document.querySelector('.stop-btn');
+const startBtn3 = document.querySelector('.start-btn');
+const stopBtn3 = document.querySelector('.stop-btn');
 
 let counterValue = 0;
 let delay = 1000;
@@ -50,11 +50,11 @@ function updateTime () {
 
 setMultiplier();
 
-startBtn.addEventListener('click', () => {
+startBtn3.addEventListener('click', () => {
   if (isRuning === false) {
     startTime();
   }
 });
-stopBtn.addEventListener('click', stopTime);
+stopBtn3.addEventListener('click', stopTime);
 
 startTime();
