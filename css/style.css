@@ -488,4 +488,50 @@ body {
   transform: scaleX(1);
   opacity: 1;
 }
+
+.filter {
+  transition: background-color .5s ease-in-out;
+}
+
+.next__anim {
+  animation: slide .5s ease-in-out;
+}
+
+.prev__anim {
+  animation: slide .5s ease-in-out reverse;
+}
+
+.anim {
+  animation: slide1 .5s ease-in-out;
+}
+
+@keyframes slide {
+  33% {
+    transform: translateX(70px);
+    opacity: 0;
+  }
+  66% {
+    transform: translateX(-140px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    animation: "";
+  }
+}
+
+@keyframes slide1 {
+  33% {
+    transform: translateY(-70px);
+    opacity: 0;
+  }
+  66% {
+    transform: translateY(140px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    animation: "";
+  }
+}
 /*# sourceMappingURL=style.css.map */
